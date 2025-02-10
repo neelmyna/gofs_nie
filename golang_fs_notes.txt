@@ -1,0 +1,49 @@
+TRAINER NAME: Nithin Neelakanta Rao
+
+TRAINER github Repo Link:
+https://github.com/neelmyna/gofs_nie
+
+Downbload git from:
+https://git-scm.com/downloads
+
+Note: Arrange/Organise files and folders neatly in your laptop.
+
+Day1 Target:
+1. Github and necessary Installations (notepad++, vs_code, mongodb[server, shell and compass])
+2. Learn Bootstrap
+3. JS learning
+4. Build some cool web pages
+
+Day2:
+Go Lang learning
+BackEnd App
+
+Day3:
+ReactJS
+Connect FE with BE
+
+Day4:
+FE-BE-DB (Complete App)
+
+Day5:
+Students will implement the App themselves
+Design using draw.io (app.diagrams.net) and basic documentation (optionally can build diagrams for the documentation)
+Assessment (MCMR and MCSR)
+--------------------------------------------------
+DAY1 NOTES:
+
+To copy the trainer repo:
+$ 
+
+To update the trainer repo:
+$ git pull origin main
+
+Config commands:
+$ git config --global user.name "user_name"
+$ git config --global user.email "user_email"
+
+To copy my repo for read and write operations:
+Template:
+
+$ git clone https://PAT@github.com/user_name/repo_name
+
