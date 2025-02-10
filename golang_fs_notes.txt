@@ -47,3 +47,20 @@ Template:
 
 $ git clone https://PAT@github.com/user_name/repo_name
 
+3 commands to update our Repo:
+1. $ git add .
+From the current, mark all the files that need to be updated (Keepting the folder structure intact)
+Here the git creates a list of files to be updated)
+
+2. $ git commit -m "Relevant message"
+
+This creates the object that need to be sent to the remote repo (that need to be updated in the remote repo)
+
+3. $ git push origin main
+
+push is to update the remote repo from the local. The object is sent to the server when this command is run.
+
+main is the default branch which is created with every git repo.
+
+NOTE: When ever we run the PUSH command, the PULL is implicitly run 1st. And only then the PUSH is run.
+
