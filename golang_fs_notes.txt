@@ -33,7 +33,6 @@ Assessment (MCMR and MCSR)
 DAY1 NOTES:
 
 To copy the trainer repo:
-$ 
 
 To update the trainer repo:
 $ git pull origin main
