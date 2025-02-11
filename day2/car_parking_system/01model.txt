@@ -11,3 +11,5 @@ car-parking-system
 	..., infosys, 1800, 15
 	{"name":"tcs", "price":3600, "quantity":25}
 	{"name":"ola", "price":90, "quantity":250}
+	
+	Current Value of your Portfolio: 
