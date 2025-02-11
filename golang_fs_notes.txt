@@ -174,6 +174,221 @@ function MyApp() {
 }
 export default MyApp;
 ------------------------------------
+React Assignments:
+
+1. Consider a button with default color btn-success
+On click it must change to btn-warning and again on click it must change to btn-danger and again when clicked, it must change back to btn-success
+
+2. Take a text box and read a single digit number from 1 to 5 only (validate the same using reg-ex in js function)
+
+Now display this digit on the button in respective word.
+----------------------------------------------------------------
+React Example1:
 
 
+function App() {
+  return (
+    <div className="App">
+      <h2>
+        React Program One
+      </h2>
+      <p>
+        Starts with index.html
+        index.js and app.js are the framework tools that gives us bundle.js and in the browser index.html linked with bundle.js is rendered.
+      </p>
+    </div>
+  );
+}
+export default App;
+----------------------------------------------------------------
+React Example2:
 
+HelloWorld.js
+
+function HelloWorld () {
+  return (
+    <p style={{color:"blue", fontSize:"40px" } }>
+      Child App Content
+    </p>
+  )
+}
+export default HelloWorld;
+----------------------------------------------------------------
+React Example3:
+
+function App () {
+  return (
+    <p>
+      Parent App Content
+    </p>
+	<HelloWorld> </HelloWorld>
+	// <HelloWorld/>
+  )
+}
+export default HelloWorld;
+----------------------------------------------------------------
+React Example4:
+
+import { Component } from 'react';
+
+export deafult class AnimalLover extends Component {  
+    render() {
+    return (
+      <h2> 
+            I am Animal Lover
+      </h2>
+    )
+  }
+}
+----------------------------------------------------------------
+React Example5:
+
+export default class IncrementCounter extends Component {
+    constructor (props) {
+        super(props)
+        this.state = {count:10}
+        this.doCount = this.doCount.bind(this)
+    }
+    incrementCount () {
+        this.setState({countNum: this.state.count + 1})    
+    }
+    render () {
+        return (
+        <div>
+            <h2> I am Animal Lover </h2>
+            <input type="button" value={this.state.countNum} onClick={this.incrementCount} />
+        </div>
+          )
+    }
+}
+----------------------------------------------------------------
+React Example6:
+
+import { Component } from "react";
+
+export class Trainer extends Component {
+    constructor(props) {
+        super(props);       
+        this.state = {trainerList: [{id: 101, name:'Nithin', technology:'MERN', location:'Mysuru'}, {id: 102, name:'Maheswaran', technology:'MEAN', location:'Tiruchirapalli'} ] }
+    }
+    render () {
+        let fnEachTrainer = (trainer) => {
+            return <tr>
+                <td> {trainer.id} </td>
+                <td> {trainer.name} </td>
+                <td> {trainer.technology} </td>
+                <td> {trainer.location} </td>    
+            </tr>;
+        };
+
+        let trainerRows = this.state.trainerList.map(fnEachTrainer);
+        return (
+            <>
+                <div className="myTopDiv">
+                    <h2> Trainers List </h2>
+                    <input type="button" id="add" value="Add Trainer"/>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <th> ID </th>
+                            <th> Name </th>
+                            <th> Technology </th>
+                            <th> Location </th>
+                        </tr>
+                        {trainerRows}
+                    </table>
+                </div>
+            </>
+        )
+    }
+}
+----------------------------------------------------------------
+React Example6:
+
+Shapes.js
+
+import { Component } from "react";
+
+export class Square extends Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div class="square"></div>
+        )
+    }
+}
+
+export class CornerCurvedSquare extends Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div class="corner-curved-square"></div>
+        )
+    }
+}
+
+export class Circle extends Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div class="circle"></div>
+        )
+    }
+}
+----------------
+App.js Code:
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import { Circle, CornerCurvedSquare, Square } from './Shapes';
+
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <div>
+          <a href="/square">Square</a> 
+           <a href="/circle">Circle</a>
+           <a href="/curve-square">Curved-Square</a>
+        </div>
+          <Routes>
+            <Route path="/" element={<Square/>} />
+            <Route path="/square" element={<Square/>} />
+            <Route path="/circle" element={<Circle/>} />
+            <Route path="/curve-square" element={<CornerCurvedSquare/>} />
+          </Routes>
+      </BrowserRouter>
+    </div>
+  );
+}
+
+export default App;
+---------------------------------
+shapes.css
+.square {
+	width: 400px;
+	height: 400 px;
+	border: 2px solid brown;
+	background-color: cyan;
+}
+.cornerCurvedsquare {
+	width: 400px;
+	height: 400 px;
+	border: 2px solid brown;
+	background-color: cyan;
+	border-radius: 3px;
+}
+.cornerCurvedsquare {
+	width: 400px;
+	height: 400 px;
+	border: 2px solid brown;
+	background-color: cyan;
+	border-radius: 50px;
+}
+------------------------------------------------
