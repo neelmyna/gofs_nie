@@ -1,0 +1,9 @@
+car-parking-system
+1. car: 
+    id, number, model, type
+    ..,  KA03 A1010, Maruti Suzuki, CUV
+    etc 
+    {"number":"KA03 A1010", "model":"Maruti Suzuki", "type":"CUV"}
+    {"number":"KA25 Z5599", "model":"Toyoto Innova", "type":"SUV"}
+
+--------------------------------------------------------------------
