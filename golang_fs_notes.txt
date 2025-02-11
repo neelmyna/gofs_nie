@@ -63,3 +63,117 @@ main is the default branch which is created with every git repo.
 
 NOTE: When ever we run the PUSH command, the PULL is implicitly run 1st. And only then the PUSH is run.
 
+Bootrap Elements:
+container
+box
+inline-box
+form-control
+bg-light
+
+JS:
+let: To create a local variable (block scope)
+const: To create a local read only variable
+var: To create a global variable (life till end of the App)
+
+Bootsrap
+
+3 differant ways of enabling Bootsrap to our design.
+
+1. Use the CDN
+2. Link to the locally stored bootstrap file
+3. Install bootstrap uing the CLI such as npm, pip etc.
+-----------------------------------------------------------------
+Creating a React app using Vite is faster and more efficient:
+
+Step 1: Install Node.js
+Ensure that **Node.js** is installed on your machine. You can check by running:
+
+$ node -v
+
+If not installed, download and install it from [Node.js official website](https://nodejs.org/)
+
+Step 2: Create a New React App with Vite
+Run the following command in your terminal to create a new React app using Vite:
+
+$ npm create vite@latest my-react-app --template react
+
+Replace my-react-app with your desired project name.
+--template react specifies that we are creating a React app.
+
+Step 3: Navigate to Your Project
+Move into the project directory:
+
+cd my-react-app
+
+Step 4: Install Dependencies
+Run the following command to install the required dependencies:
+
+$ npm install
+
+Step 5: Start the Development Server
+Run the command:
+
+$ npm run dev
+
+This will start the development server, and it will display a local URL
+(e.g.: http://localhost:5173/). 
+Open it in your browser to see your React app running.
+
+Step 6: Project Structure
+Your Vite project will have a structure like this:
+
+my-react-app/
+│── node_modules/
+│── public/
+│── src/
+│   ├── App.css
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+│── .gitignore
+│── index.html
+│── package.json
+│── README.md
+│── vite.config.js
+
+src/main.jsx is Entry point of the React app.
+src/App.jsx is Main component.
+vite.config.js is Vite configuration file.
+
+Step 7: Modify the App
+You can edit src/App.jsx to customize your React application.
+
+Example:
+
+function App() {
+  return (
+    <div>
+      <h1>Hello, Vite + React!</h1>
+    </div>
+  );
+}
+export default App;
+
+Run the React App:
+$ 
+---------------------------------------------------------------
+Save the file and see changes instantly in the browser.
+----------------------------------------
+function MyApp() {
+  return (
+    <div className="App">
+      <h2>
+        React Program One
+      </h2>
+      <p>
+        Starts with index.html
+        index.js and app.js are the framework tools that gives us bundle.js and in the browser index.html linked with bundle.js is rendered.
+      </p>
+    </div>
+  );
+}
+export default MyApp;
+------------------------------------
+
+
+
