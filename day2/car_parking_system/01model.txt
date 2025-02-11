@@ -5,5 +5,9 @@ car-parking-system
     etc 
     {"number":"KA03 A1010", "model":"Maruti Suzuki", "type":"CUV"}
     {"number":"KA25 Z5599", "model":"Toyoto Innova", "type":"SUV"}
-
---------------------------------------------------------------------
+-------------------------------------------------------------
+2. Stock/Share
+	id, name, price, quantity
+	..., infosys, 1800, 15
+	{"name":"tcs", "price":3600, "quantity":25}
+	{"name":"ola", "price":90, "quantity":250}
